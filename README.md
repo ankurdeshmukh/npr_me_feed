@@ -4,26 +4,6 @@ Every morning, a GitHub job reads today's NPR Morning Edition lineup and
 publishes a podcast feed. Each story is one episode, played straight from
 NPR's own audio. Stories are numbered (01, 02…) in the order they aired.
 
-## One-time setup (about 10 minutes)
-
-1. **Create a GitHub account** at github.com if you don't have one.
-2. **Make a new repository** called `npr-me-feed`. Set it to *Public*,
-   because free GitHub Pages needs a public repo. The feed only holds links
-   to NPR's audio, not the audio itself.
-3. **Upload these files.** On the repo page, click *Add file → Upload files*
-   and drag in everything from this folder, including the hidden `.github`
-   folder. On a Mac, press **Cmd+Shift+.** in Finder to show hidden folders.
-   Then click *Commit changes*.
-4. **Turn on Pages:** *Settings → Pages → Build and deployment → Source:
-   GitHub Actions*.
-5. **Allow the job to save its progress:** *Settings → Actions → General →
-   Workflow permissions → Read and write permissions → Save*.
-6. **Run it once by hand:** *Actions tab → Build Morning Edition feed → Run
-   workflow*. Wait for the green check (about 1 minute). Open the run log to
-   see which stories it found.
-7. **Subscribe in Overcast:** *+ (Add Podcast) → Add URL*, and paste
-   `https://YOUR-GITHUB-USERNAME.github.io/npr-me-feed/feed.xml`
-
 ## Overcast tips
 
 - Open the podcast's settings, set **Episode order: Oldest first**, and turn
